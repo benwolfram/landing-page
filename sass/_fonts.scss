@@ -1,0 +1,44 @@
+@font-face {
+  font-family: 'HKGrotesk';
+  font-weight: 700;
+  src: url('../fonts/HKGrotesk-Bold.eot'); /* IE9 Compat Modes */
+  src: url('../fonts/HKGrotesk-Bold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/HKGrotesk-Bold.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/HKGrotesk-Bold.woff') format('woff'), /* Pretty Modern Browsers */
+}
+
+@font-face {
+  font-family: 'HKGrotesk';
+  font-weight: 500;
+  src: url('../fonts/HKGrotesk-Medium.eot'); /* IE9 Compat Modes */
+  src: url('../fonts/HKGrotesk-Medium.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/HKGrotesk-Medium.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/HKGrotesk-Medium.woff') format('woff'), /* Pretty Modern Browsers */
+}
+
+html, body {
+  font-family: 'HKGrotesk', Arial, Helvetica, sans-serif;
+  color: $black;
+}
+
+.bold { font-weight: 700; }
+
+a {
+  color: $black;
+  transition: opacity 0.4s ease-out;
+  &:hover {
+    opacity: 0.5;
+    transition: opacity 0.15s ease-out;
+  }
+}
+
+h1 {
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 36px;
+}
+
+p {
+  font-size: 14px;
+  line-height: 36px;
+}

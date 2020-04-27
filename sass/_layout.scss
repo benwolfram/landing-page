@@ -1,0 +1,24 @@
+body {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.wrapper {
+  display: flex;
+}
+
+.logo {
+  background: url("../img/logo.svg") no-repeat;
+  width: 275px;
+}
+
+.spacer {
+  width: 84px;
+}
+
+.text {
+  width: 464px;
+  & p { margin-top: 4px; }
+}
