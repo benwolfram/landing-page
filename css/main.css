@@ -92,7 +92,11 @@ h1 {
 
 p {
   font-size: 14px;
-  line-height: 36px;
+  line-height: 24px;
+}
+
+* {
+  box-sizing: border-box;
 }
 
 body {
@@ -105,19 +109,42 @@ body {
 .wrapper {
   display: flex;
 }
+@media (max-width: 780px) {
+  .wrapper {
+    align-items: flex-end;
+    flex-direction: column;
+    padding: 24px;
+  }
+}
 
 .logo {
   background: url("../img/logo.svg") no-repeat;
+  height: 139px;
   width: 275px;
 }
 
 .spacer {
   width: 84px;
 }
+@media (max-width: 780px) {
+  .spacer {
+    height: 36px;
+  }
+}
 
 .text {
-  width: 464px;
+  width: 418px;
 }
 .text p {
   margin-top: 4px;
+}
+@media (max-width: 780px) {
+  .text p {
+    margin-top: 16px;
+  }
+}
+@media (max-width: 780px) {
+  .text {
+    width: 100%;
+  }
 }
